@@ -1,0 +1,91 @@
+{%extends 'core/base.html'%}
+{% block title %}Acerca de{% endblock %}
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+{%block header%}
+<h1>About me</h1>
+<span class="subheading">Biography</span>
+{%endblock%}
+{%block content%}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Jimmy Tzuc</h2>
+        <h4>Freelance | Web Developer | Web Designer</h4>
+        <p>I'm profesional web Developer having two years of experience!</p>
+        <p><i class="fa fa-birthday-cake"></i><b> Age: </b> 25 years</p>
+        <p><i class="fa fa-envelope"></i><b> Mail: </b> stjimmytzuc@gmail.com</p>
+        <p><i class="fa fa-map-marker-alt"></i><b> Addres: </b> Mérida, Yucatán</p>
+        <div class="resume">
+            <p>Download my resume here</p>
+            <a href="#"><i class="pdf fas fa-file-pdf fa-3x"></i></i></a>
+        </div>
+    </div>
+</div>
+<div class="skills">
+    <h2 class="skilltitle">Skills</h2>
+    <div class="d-flex justify-content-between flex-wrap plp">
+        <div class=" pl">
+            <p>Programming Languages</p>
+            <ul>
+                <li>HTML/CSS/JS</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+        <div class=" pl">
+            <p>Frameworks</p>
+            <ul>
+                <li>React JS</li>
+                <li>Node Js</li>
+                <li>Laravel</li>
+                <li>Django</li>
+                <li>Django Rest Framework</li>
+                <li>React Native</li>
+            </ul>
+        </div>
+        <div class=" pl">
+            <p>Webservices</p>
+            <ul>
+                <li>Rest</li>
+                <li>Soap</li>
+                <li>GraphQL</li>
+            </ul>
+        </div>
+        <div class="pl">
+            <p>Metodologies</p>
+            <ul>
+                <li>Kanban</li>
+                <li>Scrum</li>
+                <li>iWeb</li>
+            </ul>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between flex-wrap">
+        <div class="pl">
+            <p>Version Controls</p>
+            <ul>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div class="pl">
+            <p>Repositories</p>
+            <ul>
+                <li>Github</li>
+                <li>Gitlab</li>
+                <li>Bitbucket</li>
+            </ul>
+        </div>
+        <div class="pl">
+            <p>Databases</p>
+            <ul>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>Oracle</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{%endblock%}
